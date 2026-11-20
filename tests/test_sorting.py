@@ -1,5 +1,6 @@
 import pytest
 from sorting.bubble_sort import bubble_sort
+from sorting.selection_sort import selection_sort
 
 
 def test_bubble_sort():
@@ -14,6 +15,7 @@ def test_bubble_sort():
     ]
     for data in test_cases:
         assert bubble_sort(data) == sorted(data)
+        assert selection_sort(data) == sorted(data)
 
 
 def test_does_not_modify_input():
