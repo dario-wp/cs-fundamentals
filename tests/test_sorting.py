@@ -1,6 +1,7 @@
 import pytest
 from sorting.bubble_sort import bubble_sort
 
+
 def test_bubble_sort():
     test_cases = [
         [],
@@ -9,7 +10,7 @@ def test_bubble_sort():
         [5, 4, 3, 2, 1],
         [3, 1, 2, 3, 1],
         [-3, 0, -1, 2],
-        ["b", "a", "c"]
+        ["b", "a", "c"],
     ]
     for data in test_cases:
         assert bubble_sort(data) == sorted(data)
